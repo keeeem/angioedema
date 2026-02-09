@@ -72,7 +72,7 @@ export function predict(input: PredictionInput): PredictionResult {
 
 export const FEATURE_LABELS: Record<keyof PredictionInput, string> = {
   family_history: "Family history of angioedema",
-  attack_freq3_in: "Attack frequency (≥3 in past year)",
+  attack_freq3_in: "Number of flares in the past 3 months",
   age_onset: "Age at onset (years)",
   attack_length: "Typical attack length (hours)",
   flare_facial: "Facial flares",
@@ -86,7 +86,7 @@ export const FEATURE_LABELS: Record<keyof PredictionInput, string> = {
 export const FEATURE_KEYS = Object.keys(FEATURE_LABELS) as (keyof PredictionInput)[];
 
 export function isNumericFeature(key: keyof PredictionInput): boolean {
-  return key === "age_onset" || key === "attack_length";
+  return key === "age_onset" || key === "attack_length" || key === "attack_freq3_in";
 }
 
 export function generateCSV(input: PredictionInput, result: PredictionResult): string {
