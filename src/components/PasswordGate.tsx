@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Lock } from "lucide-react";
 
-const APP_PASSWORD = "predict2024"; // Change this password
+const APP_PASSWORD = "ucsd";
 
 interface PasswordGateProps {
   onAuthenticated: () => void;
