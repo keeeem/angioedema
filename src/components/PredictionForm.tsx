@@ -88,13 +88,29 @@ export default function PredictionForm() {
                   id={key}
                   type="number"
                   min={0}
-                  step={key === "age_onset" ? 1 : 0.5}
-                  placeholder={key === "age_onset" ? "e.g. 25" : "e.g. 12"}
+                  step={key === "age_onset" ? 1 : key === "attack_freq3_in" ? 1 : 0.5}
+                  placeholder={key === "age_onset" ? "e.g. 25" : key === "attack_freq3_in" ? "e.g. 3" : "e.g. 12"}
                   value={answers[key] ?? ""}
                   onChange={(e) =>
                     setAnswers((prev) => ({ ...prev, [key]: e.target.value }))
                   }
                 />
+              ) : key === "family_history" ? (
+                <Select
+                  value={answers[key]}
+                  onValueChange={(val) =>
+                    setAnswers((prev) => ({ ...prev, [key]: val }))
+                  }
+                >
+                  <SelectTrigger id={key}>
+                    <SelectValue placeholder="Select…" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="0">None</SelectItem>
+                    <SelectItem value="0.5">Yes – Weak</SelectItem>
+                    <SelectItem value="1">Yes – Strong</SelectItem>
+                  </SelectContent>
+                </Select>
               ) : (
                 <Select
                   value={answers[key]}
