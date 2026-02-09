@@ -107,8 +107,8 @@ export default function PredictionForm() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="0">None</SelectItem>
-                    <SelectItem value="0.5">Yes – Weak</SelectItem>
-                    <SelectItem value="1">Yes – Strong</SelectItem>
+                    <SelectItem value="1">Yes – Weak</SelectItem>
+                    <SelectItem value="2">Yes – Strong</SelectItem>
                   </SelectContent>
                 </Select>
               ) : (
