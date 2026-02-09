@@ -8,18 +8,18 @@
 
 const MODEL = {
   coefficients: [
-    0.5,   // family_history
-    0.3,   // attack_freq3_in
-    -0.02, // age_onset
-    0.1,   // attack_length
-    0.4,   // flare_facial
-    0.35,  // flare_tongue
-    0.45,  // flare_throat
-    0.25,  // flare_GI
-    0.3,   // flare_lip
-    0.2,   // angio_sx_pruritus
+    -1.175866714988405,    // family_history
+    0.03222911351845014,   // attack_freq3_in
+    0.12457521316485665,   // age_onset
+    -0.03532015107395068,  // attack_length
+    0.650914247063809,     // flare_facial
+    0.3483792255730186,    // flare_tongue
+    -0.21876758694743917,  // flare_throat
+    -1.6924839931100457,   // flare_GI
+    1.3431167375934083,    // flare_lip
+    1.1946976436576557,    // angio_sx_pruritus
   ],
-  intercept: -1.5,
+  intercept: -0.8853938752537898,
 };
 
 export interface PredictionInput {
