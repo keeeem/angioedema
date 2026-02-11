@@ -150,14 +150,14 @@ export default function PredictionForm() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Prediction</p>
-                <p className="mt-1 font-heading text-3xl font-bold text-foreground">
-                  {result.prediction === 1 ? "Positive" : "Negative"}
+                <p className="mt-1 font-heading text-2xl font-bold text-foreground">
+                  {result.prediction === 1 ? "Bradykinin-mediated" : "Histamine-mediated"}
                 </p>
               </div>
               <div className="text-right">
                 <p className="text-sm font-medium text-muted-foreground">Probability</p>
                 <p className="mt-1 font-heading text-3xl font-bold text-primary">
-                  {(result.probability * 100).toFixed(1)}%
+                  {((result.prediction === 1 ? result.probability : 1 - result.probability) * 100).toFixed(1)}%
                 </p>
               </div>
             </div>
