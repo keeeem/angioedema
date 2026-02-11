@@ -37,7 +37,7 @@ export interface PredictionInput {
 
 export interface PredictionResult {
   probability: number;
-  prediction: 0 | 1;
+  prediction: 1 | 2;
 }
 
 function sigmoid(x: number): number {
@@ -66,7 +66,7 @@ export function predict(input: PredictionInput): PredictionResult {
   const probability = sigmoid(logit);
   return {
     probability,
-    prediction: probability >= 0.5 ? 1 : 0,
+    prediction: probability >= 0.5 ? 1 : 2,
   };
 }
 
