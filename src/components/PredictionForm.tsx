@@ -151,7 +151,7 @@ export default function PredictionForm() {
               <div>
                 <p className="text-sm font-medium text-muted-foreground">Prediction</p>
                 <p className="mt-1 font-heading text-2xl font-bold text-foreground">
-                  {result.prediction === 1 ? "Bradykinin-mediated" : "Histamine-mediated"}
+                  {result.prediction === 1 ? "Histamine-mediated" : "Bradykinin-mediated"}
                 </p>
               </div>
               <div className="text-right">
