@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Download, Activity, RotateCcw } from "lucide-react";
+import { Download, Hospital, RotateCcw } from "lucide-react";
 import {
   predict,
   generateCSV,
@@ -62,7 +62,7 @@ export default function PredictionForm() {
       {/* Header */}
       <div className="mb-8 text-center">
         <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-          <Activity className="h-6 w-6 text-primary" />
+          <Hospital className="h-6 w-6 text-primary" />
         </div>
         <h1 className="font-heading text-2xl font-bold text-foreground">
           Angioedema Diagnosis Prediction Tool
