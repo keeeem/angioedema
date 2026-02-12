@@ -68,7 +68,7 @@ export default function PredictionForm() {
           Angioedema Diagnosis Prediction Tool
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Answer the questions below to generate a prediction for hereditary angioedema vs histamine-mediated angioedema
+          Answer the questions below to generate a prediction for hereditary (bradykinin-mediated) angioedema vs histamine-mediated angioedema
         </p>
       </div>
 
