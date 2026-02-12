@@ -74,10 +74,7 @@ export default function PredictionForm() {
 
       {/* Form */}
       <Card className="mb-6">
-        <CardHeader>
-          <CardTitle className="text-lg">Patient Features</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-5">
+        <CardContent className="space-y-5 pt-6">
           {FEATURE_KEYS.map((key) => (
             <div key={key} className="space-y-1.5">
               <Label htmlFor={key} className="text-sm font-medium">
