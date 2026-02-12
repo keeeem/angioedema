@@ -173,6 +173,11 @@ export default function PredictionForm() {
           </CardContent>
         </Card>
       )}
+
+      {/* Footer */}
+      <p className="mt-8 text-center text-xs text-muted-foreground">
+        Manuscript: &lt;placeholder&gt;
+      </p>
     </div>
   );
 }
